@@ -17,11 +17,6 @@ const routes = [
     path: '/events',
     name: 'events',
     component: EventsView
-  },
-  {
-    path: '/services',
-    name: 'services',
-    component:()=> import('../views/ServicesView.vue')
   }
   
 ]

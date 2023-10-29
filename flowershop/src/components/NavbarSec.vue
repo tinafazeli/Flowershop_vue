@@ -2,10 +2,7 @@
   <div class="navbarSec">
         <div class="row navbarItem" dir="rtl">
             <ul>
-                <li><router-link class="item active" to="/">خانه</router-link></li>
-                <li><router-link class="item" to="/events">مناسبت ها</router-link></li>
-                <li><router-link class="item" to="/services">خدمات</router-link></li>
-                <li><router-link class="item" to="/about">درباره ی ما</router-link></li>
+                <li><router-link v-for="x in sections" :key="x" class="item" :to="x.to">{{ x.name }}</router-link></li>
             </ul>
             <div class="btn">
                 ورود|ثبت نام
@@ -45,7 +42,15 @@
 
 <script>
 export default {
-
+    data(){
+        return{
+          sections:[{name:'خانه', to:'/'},
+           {name:'مناسبت ها', to:'/events'},
+           {name:'خدمات', to:'/services'}, 
+          {name:'درباره ما', to:'/about'}]
+        }
+        
+    }
 }
 </script>
 

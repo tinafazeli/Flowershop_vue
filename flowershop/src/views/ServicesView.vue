@@ -1,15 +1,17 @@
 <template>
   <div class="services">
-    <Services/>
+    <Service/>
   </div>
 </template>
 
 <script>
-import Services from '@/components/Services.vue'
+
+import Service from '@/components/Services.vue'
+
 export default {
-    name: 'ServicesView',
+    name: 'ServicesView.vue',
     components:{
-        Services
+        Service
     }
 }
 </script>

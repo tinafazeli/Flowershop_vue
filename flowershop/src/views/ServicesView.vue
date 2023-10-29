@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Services from '@/components/services.vue'
+import Services from '@/components/Services.vue'
 export default {
     name: 'ServicesView',
     components:{

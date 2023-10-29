@@ -3,9 +3,9 @@
         <div class="row navbarItem" dir="rtl">
             <ul>
                 <li><router-link class="item active" to="/">خانه</router-link></li>
-                <li><a href="#" class="item">مناسبت ها</a></li>
-                <li><a href="#" class="item">خدمات</a></li>
-                <li><a href="#" class="item">درباره ی ما</a></li>
+                <li><router-link class="item" to="/events">مناسبت ها</router-link></li>
+                <li><router-link class="item" to="/services">خدمات</router-link></li>
+                <li><router-link class="item" to="/about">درباره ی ما</router-link></li>
             </ul>
             <div class="btn">
                 ورود|ثبت نام

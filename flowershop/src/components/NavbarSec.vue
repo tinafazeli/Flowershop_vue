@@ -2,7 +2,7 @@
   <div class="navbarSec">
         <div class="row navbarItem" dir="rtl">
             <ul>
-                <li><a href="#" class="item active">خانه</a></li>
+                <li><router-link class="item active" to="/">خانه</router-link></li>
                 <li><a href="#" class="item">مناسبت ها</a></li>
                 <li><a href="#" class="item">خدمات</a></li>
                 <li><a href="#" class="item">درباره ی ما</a></li>

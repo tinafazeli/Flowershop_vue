@@ -2,7 +2,16 @@
   <div class="navbarSec">
         <div class="row navbarItem" dir="rtl">
             <ul>
-                <li><router-link v-for="x in sections" :key="x" class="item" :to="x.to" @click="AddClass"> {{ x.name }} </router-link></li>
+                <!-- <li><router-link v-for="x in sections"
+                    :key="x" class="item" :class="{'active':isClick}" :to="x.to" @click="AddClass">
+                     {{ x.name }} 
+                </router-link>
+            </li> -->
+            <li><router-link v-for="x in sections"
+                    :key="x" class="item"  :to="x.to">
+                     {{ x.name }} 
+                </router-link>
+            </li>
             </ul>
             <div class="btn">
                 ورود|ثبت نام
@@ -38,7 +47,7 @@
 export default {
     data(){
         return{
-            awesome:0,
+            // isClick: false,
           sections:[{name:'خانه', to:'/'},
            {name:'مناسبت ها', to:'/events'},
            {name:'خدمات', to:'/services'}, 
@@ -55,15 +64,12 @@ export default {
           ]
         }
         
-    },
-    methods:{
-        AddClass(){
-            var r=this.awesome+1
-            if (r>0){
-                document.style.class="active"
-            }
-        }
     }
+    // methods:{
+    //     AddClass(){
+    //         this.isClick=!this.isClick;
+    //     }
+    // }
 }
 </script>
 

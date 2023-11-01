@@ -116,27 +116,27 @@ export default {
 class:'bi bi-cart-plus',
 secClass: 'bi bi-cart-check-fill'},
 {
-     title:"گل سوسن",
-    price:'140,000',
-  bprice:'160,000',
+     title:"گل لاله",
+    price:'150,000',
+  bprice:'170,000',
 class:'bi bi-cart-plus',
 secClass: 'bi bi-cart-check-fill'},
 {
-     title:"گل سوسن",
-    price:'140,000',
-  bprice:'160,000',
+     title:"گل لیلیوم",
+    price:'170,000',
+  bprice:'190,000',
 class:'bi bi-cart-plus',
 secClass: 'bi bi-cart-check-fill'},
 {
-     title:"گل سوسن",
-    price:'140,000',
-  bprice:'160,000',
+     title:"گل بنفشه",
+    price:'130,000',
+  bprice:'145,000',
 class:'bi bi-cart-plus',
 secClass: 'bi bi-cart-check-fill'},
 {
-     title:"گل سوسن",
+     title:"گل پروانه",
     price:'140,000',
-  bprice:'160,000',
+  bprice:'155,000',
 class:'bi bi-cart-plus',
 secClass: 'bi bi-cart-check-fill'},]
     }

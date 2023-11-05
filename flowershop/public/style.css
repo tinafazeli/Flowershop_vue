@@ -237,12 +237,13 @@ body{
     border-color:#7D0371;
     border-radius: 9px;
     color: #7D0371;
-    position: relative;
-    left: 10px;
+    position: absolute;
+    left: 100px;
     top: 16px;
     width: 28px;
     height: 28px;
 }
+
 .best-sell .top-sellers .item-detail .like{
     background-color: #f0fff1;
     border-width: 1px;

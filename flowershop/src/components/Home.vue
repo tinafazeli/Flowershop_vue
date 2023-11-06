@@ -11,45 +11,7 @@
         </div>
         </div>
         <div class="best-sell">
-          <div class="row">
-            <div class="top-sellers">
-              <div class="item" v-for="x in card" :key="x">
-                <img src="../assets/images/flower20.jpg">
-                <div class="item-detail">
-                  <h3>{{ x.title }}</h3>
-                  <div class="price">
-                      <a href="#" class="now">{{ x.price }}<br><span class="rial">تومان</span></a>
-                      <a class="space">|</a>
-                      <a href="#" class="befor">{{ x.bprice }}<br><span class="rial">تومان</span></a>  
-                  </div>
-                  <button class="buy">
-                    <svg @click="Buy1()"
-                    id="buybtn1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor" 
-                    :class="x.class"
-                    viewBox="0 0 16 16" >
-                    <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
-                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                  </svg>
-                  <svg @click="Buy2()"
-                  id="buybtn2"
-                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" 
-                    :class="x.secClass" 
-                    viewBox="0 0 16 16">
-                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
-                  </svg>
-                  <button class="like">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                                </svg>
-                    </button>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
+          <!-- <div class="row"> -->
             <div class="top-sellers">
               <div class="item" v-for="x in card" :key="x">
                 <img src="../assets/images/flower20.jpg">
@@ -79,22 +41,28 @@
 
                       </svg>
                     </div>
-
-                  <button class="like">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                  </button>
+                  <button class="like" v-on:click="x.Like =! x.Like">
+                    <div v-if="x.Like">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                                </svg>
-                        </button>
+                      </svg>
+                    </div>
+                    <div v-else>
+                      <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                      </svg>
+                    </div>
                   </button>
                 </div>
               </div>
-            </div>
-
-
-            <div class="top-sellers">
-              
-            </div>
-          </div>
+            </div>            
+            <!-- <button class="like">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                        </button> -->
+          <!-- </div> -->
           <div class="continue" dir="rtl">
                 <p> موارد بیشتر >></p>
             </div>
@@ -105,82 +73,108 @@
             <p id="titr">پرفروش ترین ها
             </p>
         </div>
-        <button @click="count++">{{count}}</button>
-
-        <p v-if="count>3">{{ count }}</p>
     </div>
 </template>
 
 <script>
 import Navbar from '@/components/NavbarSec.vue'
-// import ref from 'vue'
 export default {
   name:'NavbarView',
   components:{
     Navbar
   },
   data(){
-    return{
-      // Test:ref(true),
-      count:0,
+    return{ 
     card:[{
      title:"گل سوسن",
     price:'140,000',
-  bprice:'160,000',
-class:'bi bi-cart-plus',
-secClass: 'bi bi-cart-check-fill',
-Buy:true,
-},
+    bprice:'160,000',
+    class:'bi bi-cart-plus',
+    secClass: 'bi bi-cart-check-fill',
+    Buy:true,
+    Like:true
+    },
 
-{
-     title:"گل لاله",
-    price:'150,000',
-  bprice:'170,000',
-class:'bi bi-cart-plus',
-Buy:true,
-secClass: 'bi bi-cart-check-fill'},
-{
-     title:"گل لیلیوم",
-    price:'170,000',
-  bprice:'190,000',
-class:'bi bi-cart-plus',
-Buy:true,
-
-secClass: 'bi bi-cart-check-fill'},
-{
-     title:"گل بنفشه",
-    price:'130,000',
-  bprice:'145,000',
-class:'bi bi-cart-plus',
-Buy:true,
-
-secClass: 'bi bi-cart-check-fill'},
-{
-     title:"گل پروانه",
-    price:'140,000',
-  bprice:'155,000',
-class:'bi bi-cart-plus',
-Buy:true,
-
-secClass: 'bi bi-cart-check-fill'},]
-    }
+    {
+        title:"گل لاله",
+        price:'150,000',
+      bprice:'170,000',
+      class:'bi bi-cart-plus',
+      Buy:true,
+      secClass: 'bi bi-cart-check-fill',
+      Like:true
+    },
+    {
+        title:"گل لیلیوم",
+      price:'170,000',
+    bprice:'190,000',
+    class:'bi bi-cart-plus',
+    Buy:true,
+    secClass: 'bi bi-cart-check-fill',
+    Like:true
   },
-  methods:{
-    handleBuy(){
-      this.Buy=! this.Buy
+    {
+        title:"گل بنفشه",
+        price:'130,000',
+      bprice:'145,000',
+    class:'bi bi-cart-plus',
+    Buy:true,
+    Like:true,
+    secClass: 'bi bi-cart-check-fill'
+  },
+    {
+        title:"گل پروانه",
+        price:'140,000',
+      bprice:'155,000',
+    class:'bi bi-cart-plus',
+    Buy:true,
+    secClass: 'bi bi-cart-check-fill',
+    Like:true},
+    {
+     title:"گل  عقاقیا",
+    price:'145,000',
+    bprice:'162,000',
+    class:'bi bi-cart-plus',
+    secClass: 'bi bi-cart-check-fill',
+    Like:true,
+    Buy:true
     },
-    Buy1(){
-      var buybtn1=document.getElementById('buybtn1');
-      var buybtn2=document.getElementById('buybtn2');
-      buybtn1.style.display='none';
-      buybtn2.style.display='inline';
-      buybtn2.style.color='red'
+    {
+        title:"گل آفتاب گردون",
+        price:'140,000',
+      bprice:'160,000',
+      class:'bi bi-cart-plus',
+      Like:true,
+      secClass: 'bi bi-cart-check-fill',
+    Buy:true
     },
-    Buy2(){
-      var buybtn1=document.getElementById('buybtn1');
-      var buybtn2=document.getElementById('buybtn2');
-      buybtn2.style.display='none';
-      buybtn1.style.display='inline';
+    {
+        title:"گل شبدر",
+      price:'160,000',
+    bprice:'180,000',
+    class:'bi bi-cart-plus',
+    secClass: 'bi bi-cart-check-fill',
+    Buy:true,
+    Like:true
+  },
+    {
+        title:"گل سنبل",
+        price:'110,000',
+      bprice:'150,000',
+    class:'bi bi-cart-plus',
+    secClass: 'bi bi-cart-check-fill',
+    Buy:true,
+    Like:true
+  },
+    {
+        title:"گل زنبق",
+        price:'140,000',
+      bprice:'155,000',
+    class:'bi bi-cart-plus',
+    Buy:true,
+    Like:true,
+    secClass: 'bi bi-cart-check-fill'}
+  ]
     }
   }
 }

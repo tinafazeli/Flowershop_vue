@@ -145,16 +145,16 @@ body{
 }
 
 /* پرفروش ترین محصولات  */
+
 .top-sellers{
     background-color: #D2D1F1;
-    height: 450px;
-    width: 100%;
-    display: inline-flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
 }
-.top-sellers-footer{
+/* .top-sellers-footer{
     position: relative;
     bottom: 300px;
-}
+} */
 .best-sell .continue p{
     width: 100%;
     background-color: #D2D1F1;
@@ -238,8 +238,8 @@ body{
     border-radius: 9px;
     color: #7D0371;
     position: absolute;
-    left: 100px;
-    top: 16px;
+    left: 135px;
+    top: 60px;
     width: 28px;
     height: 28px;
 }
@@ -250,19 +250,14 @@ body{
     border-color:#7D0371;
     border-radius: 9px;
     color: #7D0371;
-    position: relative;
-    left: 35px;
-    bottom: 19px;
+    /* position:static; */
+    position: absolute;
+    left:168px;
+    bottom: 20px;
     width: 28px;
     height: 28px;
 }
 
-#like2{
-    display: none;
-}
-#buybtn2{
-    display: none;
-}
 
 #titr{
     position: relative;

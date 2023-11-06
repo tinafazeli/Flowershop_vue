@@ -11,6 +11,8 @@
         </div>
         </div>
         <div class="best-sell">
+          <p id="titr">پرفروش ترین ها
+            </p>
           <!-- <div class="row"> -->
             <div class="top-sellers">
               <div class="item" v-for="x in card" :key="x">
@@ -56,24 +58,18 @@
                   </button>
                 </div>
               </div>
-            </div>            
-            <!-- <button class="like">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                                </svg>
-                        </button> -->
-          <!-- </div> -->
+            </div> 
           <div class="continue" dir="rtl">
                 <p> موارد بیشتر >></p>
-            </div>
+          </div>
         </div>
-        <div class="top-sellers-footer">
+        <!-- <div class="top-sellers-footer">
             <img class="line" src="../assets/images/line2-removebg-preview.png" alt="">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#D2D1F1" fill-opacity="1" d="M0,224L60,208C120,192,240,160,360,165.3C480,171,600,213,720,240C840,267,960,277,1080,245.3C1200,213,1320,139,1380,101.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-            <p id="titr">پرفروش ترین ها
-            </p>
-        </div>
+        </div> -->
     </div>
+
+    
 </template>
 
 <script>

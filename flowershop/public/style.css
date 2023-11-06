@@ -151,10 +151,7 @@ body{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
 }
-/* .top-sellers-footer{
-    position: relative;
-    bottom: 300px;
-} */
+
 .best-sell .continue p{
     width: 100%;
     background-color: #D2D1F1;
@@ -165,18 +162,14 @@ body{
     color: #7D0371;
     font-size: 1.4rem;
 }
-.top-sellers-footer{
-    /* position: absolute; */
-    /* bottom: 50px; */
+/* .top-sellers-footer{
     width: 100%;
-    /* position:initial;
-    bottom: 270px; */
 }
 .top-sellers-footer .line{
     position: relative;
     top: 270px;
     width: 100%;
-}
+} */
 .best-sell .top-sellers .item{
     padding-top: 30px;
     width: 200px;

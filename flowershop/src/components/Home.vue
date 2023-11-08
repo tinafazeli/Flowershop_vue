@@ -67,6 +67,25 @@
             <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#D2D1F1" fill-opacity="1" d="M0,224L60,208C120,192,240,160,360,165.3C480,171,600,213,720,240C840,267,960,277,1080,245.3C1200,213,1320,139,1380,101.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg> -->
             <img class="line" src="../assets/images/line2-removebg-preview.png" alt="">
         </div>
+        <div class="giftBox">
+          <div class="slideshow">
+            <div class="carusel">
+              <div class="slide" v-for="x in giftItem" :key="x">
+              <img v-bind:src="x.src" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="gift-detail">
+            <hr class="rotate2">
+            <h1>با یک باکس گل عزیزات رو</h1>
+            <h1 class="secondtitr">سوپرایز کن</h1>
+            <div class="detail-box">
+                <p dir="rtl">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی
+                </p>
+            </div>
+        </div>
+        </div>
    </div>
 
     
@@ -170,7 +189,22 @@ export default {
     Buy:true,
     Like:true,
     secClass: 'bi bi-cart-check-fill'}
-  ]
+  ],
+  giftItem:[{
+    src:require('../assets/images/box1-removebg-preview.png')
+  },
+  {
+    src:require('../assets/images/box2-removebg-preview.png')
+  },
+  {
+    src:require('../assets/images/box3-removebg-preview.png')
+  },
+  {
+    src:require('../assets/images/box4-removebg-preview.png')
+  },
+  {
+    src:require('../assets/images/box5-removebg-preview.png')
+  }]
     }
   }
 }

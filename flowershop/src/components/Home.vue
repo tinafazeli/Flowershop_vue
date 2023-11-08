@@ -71,7 +71,7 @@
           <div class="slideshow">
             <div class="carusel">
               <div class="slide" v-for="x in giftItem" :key="x">
-              <img v-bind:src="x.src" alt="">
+                <div class="circleback"><img v-bind:src="x.src" alt=""></div>
               </div>
             </div>
           </div>

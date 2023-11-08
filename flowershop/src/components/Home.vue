@@ -63,11 +63,11 @@
                 <p> موارد بیشتر >></p>
           </div>
         </div>
-        <!-- <div class="top-sellers-footer">
+        <div class="top-sellers-footer">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#D2D1F1" fill-opacity="1" d="M0,224L60,208C120,192,240,160,360,165.3C480,171,600,213,720,240C840,267,960,277,1080,245.3C1200,213,1320,139,1380,101.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg> -->
             <img class="line" src="../assets/images/line2-removebg-preview.png" alt="">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#D2D1F1" fill-opacity="1" d="M0,224L60,208C120,192,240,160,360,165.3C480,171,600,213,720,240C840,267,960,277,1080,245.3C1200,213,1320,139,1380,101.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-        </div> -->
-    </div>
+        </div>
+   </div>
 
     
 </template>
@@ -178,5 +178,163 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.intro-sec{
+    display: flex;
+}
+.intro-sec .intro-txt{
+    margin-top: 5%;
+}
+.rotate{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    background-color: #FF0000;
+    border-color: #FF0000;
+    border-radius: 150px !important;
+    width: 76px;
+    height: 6px;
+    position: relative;
+    left: 350px;
+    top:62px;
+    }
+.intro-sec .intro-txt h1{
+    width: 280px;
+    margin-right: 84px;
+    font-weight: bold;
+}
+.intro-sec .intro-txt .intro-p{
+    color: #585757;
+    margin-top: 45px;
+    margin-right: 80px;
+    width: 80%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.intro-sec .intro-txt .p2{
+    width: 85% !important;
+}
+.top-sellers{
+    background-color: #D2D1F1;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
 
+.best-sell .continue p{
+    width: 100%;
+    background-color: #D2D1F1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 50px;
+    padding-bottom: 4px;
+    color: #7D0371;
+    font-size: 1.4rem;
+}
+.best-sell .top-sellers .item{
+    padding-top: 30px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.best-sell .top-sellers .item img{
+    width: 210px;
+    height: 260px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.best-sell .top-sellers .item-detail{
+    position: relative;
+    bottom: 30px;
+    background-color: #fff;
+    margin-top: 0px;
+    padding-top: 0px;
+    width: 210px;
+    height: 108px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.best-sell .top-sellers .item-detail h3{
+    padding-left: 30%;
+    padding-top: 10px;
+}
+.best-sell .top-sellers .item-detail .price{
+    display:inline-flex;
+    padding-left: 10px;
+}
+.best-sell .top-sellers .item-detail .price a{
+    line-height: 8.5px;
+}
+.best-sell .top-sellers .item-detail .price .now{
+    color: #000000;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.best-sell .top-sellers .item-detail .price .now .rial{
+    position: relative;
+    right: 8px;
+    font-size: .6rem;
+    font-weight: bold;
+}
+.best-sell .top-sellers .item-detail .price .space{
+    color: #797979;
+}
+.best-sell .top-sellers .item-detail .price .befor{
+    color: #FF0000;
+    font-size: .8rem;
+    text-decoration: line-through;
+    padding-top: 2px;
+}
+.best-sell .top-sellers .item-detail .price .befor .rial{
+    font-size: .6rem;
+    text-decoration: none !important;
+}
+.best-sell .top-sellers .item-detail .buy{
+    background-color: #f0fff1;
+    border-width: 1px;
+    border-color:#7D0371;
+    border-radius: 9px;
+    color: #7D0371;
+    position: absolute;
+    left: 135px;
+    top: 60px;
+    width: 28px;
+    height: 28px;
+}
+.best-sell .top-sellers .item-detail .like{
+    background-color: #f0fff1;
+    border-width: 1px;
+    border-color:#7D0371;
+    border-radius: 9px;
+    color: #7D0371;
+    /* position:static; */
+    position: absolute;
+    left:168px;
+    bottom: 20px;
+    width: 28px;
+    height: 28px;
+}
+#titr{
+    position: relative;
+    top:42px;
+    left: 72%;
+    color: #FF0000;
+    width: 280px;
+    height: 60px;
+    background-color: #D2D1F1;
+    font-size: 2.6rem;
+    font-weight: bold;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding-left: 40px;
+    border-bottom-color: #7D0371;
+    border-bottom-width: 1px;
+    border-bottom-style:solid;
+}
+
+.top-sellers-footer{
+  background-color: #D2D1F1;
+}
+.top-sellers-footer .line{
+    width: 100%;
+} 
 </style>

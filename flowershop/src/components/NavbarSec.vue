@@ -79,4 +79,96 @@ export default {
     background-repeat: no-repeat;
     background-size: 100% 530px;
 }
+
+.navbarSec{
+    margin-top: 0px;
+    background-color: #9A6BA9;
+    height: 530px;
+}
+
+.navbarSec .navbarItem{
+    display: inline;
+}
+.navbarSec .navbarItem ul{
+    margin-top: 0px;
+    list-style: none;
+}
+.navbarItem ul li{
+    display: inline;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+.navbarSec .navbarItem ul li .item{
+    color: #7D0371;
+    width: 80px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 6px;
+    border:1px solid #7D0371;
+    border-radius: 10px;
+}
+.navbarSec .navbarItem ul li .item:hover{
+    color: #fff;
+    background-color: #7D0371;
+}
+.navbarSec .navbarItem ul li .active{
+    color: #ffffff;
+    background-color: #9A6BA9;
+    border:1px solid #9A6BA9;
+    
+}
+.navbarSec .navbarItem .btn{
+    position: relative;
+    bottom: 55px;
+    width: 120px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    border:1px solid #ffffff;
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;
+}
+.navbarSec .navbarItem .btn:hover{
+    background-color: #7c3876c9;
+    border: #7c3876c9;
+}
+.navbarSec .navbardetail{
+    color: #231557;
+    margin-top: 60px;
+    margin-right: 15%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+}
+.navbarSec .navbardetail h1 span{
+    color: #FF0000;
+}
+
+.navbarSec .navbarSec2 table{
+    position: relative;
+    top:95px;
+    right: 30%;
+    height: 60px;
+    width:500px;
+    border-radius: 50px;
+    color:#fff;
+    background-color: #7c3876;
+    
+}
+.navbarSec .navbarSec2 table tr td{
+    text-align: center;
+    border-right: 1px solid #fff;
+    width: 150px;
+    
+}
+.navbarSec .navbarSec2 table  td:hover{
+    color: #b6b6b6;
+    font-size: large;
+}
+.navbarSec .navbarSec2 table tr .item1{
+    border-right: none;
+}
 </style>

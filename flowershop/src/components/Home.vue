@@ -69,6 +69,7 @@
         </div>
         <div class="giftBox">
           <div class="slideshow">
+            <!-- <button @click="count++">back</button> -->
             <div class="carusel">
               <div class="slide" v-for="x in giftItem" :key="x">
                 <div class="circleback"><img v-bind:src="x.src" alt=""></div>
@@ -86,6 +87,93 @@
             </div>
         </div>
         </div>
+
+        <div class="special-discount">
+        <div class="space"></div>
+        <div id="titr2"> تخفیف های ویژه</div>
+        <div class="item">
+            <div class="row">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-compact-left btn2" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
+                  </svg>
+                <div class="items">
+                    <img src="images/flower16.jpg" alt="">
+                    <div class="item-detail">
+                        <h3>گل سوسن</h3>
+                        <div class="price">
+                          <a href="#" class="now">140,000<br><span class="rial">تومان</span></a>
+                          <a class="space">|</a>
+                          <a href="#" class="befor">160,000<br><span class="rial">تومان</span></a>  
+                        </div>
+                        <button class="buy">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                            <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                            </svg>
+                        </button>
+                        <button class="like">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                        </button>
+                    </div>
+                    
+                </div>
+
+
+                <div class="items">
+                    <img src="images/flower2.jpg" alt="">
+                    <div class="item-detail">
+                        <h3>گل سوسن</h3>
+                        <div class="price">
+                          <a href="#" class="now">140,000<br><span class="rial">تومان</span></a>
+                          <a class="space">|</a>
+                          <a href="#" class="befor">160,000<br><span class="rial">تومان</span></a>  
+                        </div>
+                        <button class="buy">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                            <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                            </svg>
+                        </button>
+                        <button class="like">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="images/flower3.jpg" alt="">
+                    <div class="item-detail">
+                        <h3>گل سوسن</h3>
+                        <div class="price">
+                          <a href="#" class="now">140,000<br><span class="rial">تومان</span></a>
+                          <a class="space">|</a>
+                          <a href="#" class="befor">160,000<br><span class="rial">تومان</span></a>  
+                        </div>
+                        <button class="buy">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                            <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                            </svg>
+                        </button>
+                        <button class="like">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                        </button>
+                    </div>
+                    
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-compact-right btn1" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                </svg>
+
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#D2D1F1" fill-opacity="1" d="M0,96L48,80C96,64,192,32,288,53.3C384,75,480,149,576,170.7C672,192,768,160,864,128C960,96,1056,64,1152,58.7C1248,53,1344,75,1392,85.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    </div>
    </div>
 
     
@@ -100,6 +188,7 @@ export default {
   },
   data(){
     return{ 
+      // count:0,
     card:[{
      title:"گل سوسن",
     price:'140,000',
@@ -371,4 +460,132 @@ export default {
 .top-sellers-footer .line{
     width: 100%;
 } 
+.giftBox{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* height: 850px; */
+    margin-top: 50px;
+}
+.slideshow{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.carusel{
+    width: 45rem;
+    height: 42rem;
+    border: .2rem dashed #eebe97;
+    border-radius: 100%;
+    display: flex;
+    position: relative;
+    right:50%;
+    justify-content: center;
+    align-items: center;
+    flex-shrink:0;
+    transition: rotate 1s;
+}
+.slide {
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+}
+.slide:nth-child(1) {
+    bottom: -9rem;
+    left:27rem;
+}
+.slide:nth-child(2) {
+    top:-3rem;
+    left: 27rem;
+}
+.slide:nth-child(3) {
+    top: 5rem;
+    right: -6.5rem;
+}
+.slide:nth-child(4) {
+    top:17rem;
+    left:41rem;
+}
+.slide:nth-child(5) {
+    top:28rem;
+    left:37rem;
+}
+.slide:nth-child(1) img{
+    height: 11rem;
+    bottom: 35px;
+    left:2px;
+}
+.slide:nth-child(2) img{
+    height: 9rem;
+}
+.slide:nth-child(3) img{
+    width: 7.5rem;
+    height: 10.5rem;
+    left:10px;
+    bottom: 25px;
+}
+.slide:nth-child(4) img{
+    width: 8rem;
+    height: 10rem;
+    bottom: 30px;
+}
+.slide:nth-child(5) img{
+    height: 10rem;
+    bottom: 40px;
+}
+
+.slide .circleback{
+    width: 8rem;
+    height: 8rem;
+    background-color: #9A6BA9;
+    border-radius: 80%;
+}
+.slide img {
+    width: 8rem;
+    height: 11rem;
+    transition: transform 0.5s;
+    position: relative;
+    bottom: 5px;
+}
+.giftBox .gift-detail{
+    margin-top: 80px;
+    margin-right: 50px;
+}
+.giftBox .gift-detail h1{
+    font-weight:bolder;
+    font-size: 2.5rem;
+    padding-left: 7%;
+}
+.giftBox .gift-detail .secondtitr{
+    color: #FF0000;
+    padding-left: 57%;
+}
+.rotate2{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    background-color: #FF0000;
+    border-color: #FF0000;
+    border-radius: 150px !important;
+    width: 120px;
+    height: 10px;
+    position: relative;
+    left: 200px;
+    top:92px;
+    }
+.giftBox .gift-detail .detail-box{
+    background-color: #D2D1F1;
+    width: 400px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.giftBox .gift-detail .detail-box p{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #535151;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 </style>

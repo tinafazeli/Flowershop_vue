@@ -8,14 +8,18 @@
             :index="index"
             >
         </carousel-item>
+        <carousel-controls @prev='prev' @next='next'></carousel-controls>
           </div>
         </div>
 </template>
 
 <script>
 import CarouselItem from "./CarouselItem.vue"
+import CarouselControls from "./CarouselControls.vue"
+
+
 export default {
-    components:{CarouselItem},
+    components:{CarouselItem, CarouselControls},
     props:['slides'],
     data:()=>({
       currentSlide:0,
@@ -24,14 +28,25 @@ export default {
     methods:{
       setCurrentSlide(index){
         this.currentSlide=index;
+      },
+      prev(){
+        const index=
+        this.currentSlide > 0 ? this.currentSlide - 1 : this.slides.length - 1;
+        this.setCurrentSlide(index)
+      },
+      next(){
+        const index=
+        this.currentSlide < this.slides.length -1 ? this.currentSlide + 1 : 0;
+        this.setCurrentSlide(index)
       }
     },
     mounted(){
-      this.slideInterval=setInterval(() => {
-        const index=this.currentSlide < this.slides.length -1 ? this.currentSlide + 1 : 0;
-        // this.currentSlide=index;
-        this.setCurrentSlide(index);
-      }, 3000);
+      // this.slideInterval=setInterval(() => {
+      //   // const index=this.currentSlide < this.slides.length -1 ? this.currentSlide + 1 : 0;
+      //   // // this.currentSlide=index;
+      //   // this.setCurrentSlide(index);
+      //   this.next()
+      // }, 3000);
     },
     beforeUnmount(){
       clearInterval(this.slideInterval)

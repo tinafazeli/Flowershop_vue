@@ -1,7 +1,7 @@
 <template>
     <div>
         <Navbar/>
-        <carousel :slides="slides"></carousel>
+        <carousel :slides="slides" :interval="3000" controls indicators ></carousel>
     </div>
 </template>
 

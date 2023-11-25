@@ -88,7 +88,7 @@
         </div>
         </div>
 
-        <div class="special-discount">
+        <!-- <div class="special-discount">
         <div class="space"></div>
         <div id="titr2"> تخفیف های ویژه</div>
         <div class="item">
@@ -169,11 +169,11 @@
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-compact-right btn1" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
                 </svg>
-
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#D2D1F1" fill-opacity="1" d="M0,96L48,80C96,64,192,32,288,53.3C384,75,480,149,576,170.7C672,192,768,160,864,128C960,96,1056,64,1152,58.7C1248,53,1344,75,1392,85.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-    </div>
+    </div> -->
+  <carousel></carousel>
    </div>
 
     
@@ -181,10 +181,13 @@
 
 <script>
 import Navbar from '@/components/NavbarSec.vue'
+import Carousel from '@/components/secondcarousel/CarouselMain.vue'
+
 export default {
   name:'NavbarView',
   components:{
-    Navbar
+    Navbar,
+    Carousel
   },
   data(){
     return{ 
